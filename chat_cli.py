@@ -17,7 +17,7 @@ if not os.getenv("GEMINI_API_KEY"):
     print("2. Paste your Google AI Studio API key")
     exit(1)
 
-MODEL = "gemini/gemini-2.5-flash"
+MODEL = "ollama/qwen2.5" # "gemini/gemini-2.5-flash"
 
 def ask_llm(messages):
     """Send messages to the LLM and return its response."""

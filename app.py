@@ -26,7 +26,7 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
 # Model configuration - change this one string to swap providers
-MODEL = "gemini/gemini-2.5-flash"
+MODEL = "ollama/qwen2.5" # "gemini/gemini-2.5-flash"
 
 
 def get_llm_response(messages):
